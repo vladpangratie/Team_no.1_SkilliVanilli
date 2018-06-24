@@ -8,5 +8,5 @@ public class Clothes implements Serializable {
     public String style;
     public int min;
     public int max;
-    //hi
+    //buna seara din nou
 }
