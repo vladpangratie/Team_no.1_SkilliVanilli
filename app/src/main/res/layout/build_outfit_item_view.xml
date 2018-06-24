@@ -40,10 +40,16 @@
             android:gravity="center"
             android:text="Category" />
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="9dp" />
+
         <Button
             android:id="@+id/chooseBtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="37dp"
+            android:background="@color/colorAccent"
             android:text="Choose" />
 
     </LinearLayout>

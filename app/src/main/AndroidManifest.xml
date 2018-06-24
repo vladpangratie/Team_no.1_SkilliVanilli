@@ -33,6 +33,10 @@
         <activity
             android:name=".SelectClothesActivity"
             android:label="@string/title_activity_select_clothes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_help"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

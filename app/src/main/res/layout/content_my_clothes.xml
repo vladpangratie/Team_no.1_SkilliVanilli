@@ -20,7 +20,7 @@
         <GridView
             android:id="@+id/activity_main_grid_view"
             android:layout_width="match_parent"
-            android:layout_height="800dp"
+            android:layout_height="999786dp"
             android:gravity="center"
             android:horizontalSpacing="4dp"
             android:numColumns="auto_fit"

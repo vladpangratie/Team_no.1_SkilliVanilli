@@ -6,22 +6,13 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CursorAdapter;
-import android.widget.GridView;
 
-import ro.scoaladevalori.cegeka.wardrop.db.MemoriesAdapter;
-import ro.scoaladevalori.cegeka.wardrop.db.MemoryDbHelper;
-
-public class MyClothesActivity extends AppCompatActivity {
-
-    private MemoryDbHelper dbHelper;
-    private GridView gridView;
+public class HelpActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_clothes);
+        setContentView(R.layout.activity_help);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -33,18 +24,5 @@ public class MyClothesActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });*/
-
-
-        this.gridView = (GridView) findViewById(R.id.activity_main_grid_view);
-        this.dbHelper = new MemoryDbHelper(MyClothesActivity.this);
-        this.gridView.setAdapter(new MemoriesAdapter(MyClothesActivity.this, this.dbHelper.readAllMemories(), false));
-
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        ((CursorAdapter)gridView.getAdapter()).swapCursor(this.dbHelper.readAllMemories());
     }
 }
