@@ -33,7 +33,9 @@
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_select_clothes" />
+    <include
+        layout="@layout/content_select_clothes"
+        android:layout_height="100000dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/intentBtn"
